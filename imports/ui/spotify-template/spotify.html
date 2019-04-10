@@ -1,0 +1,13 @@
+<template name="spotify">
+  <div class="home-content center-align">
+    <h1>Here's What I'm Listening To</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="flex-row-container">
+      {{#each recentSongs}}
+        {{> spotifyCard}}
+      {{/each}}
+    </div>
+  </div>
+</template>

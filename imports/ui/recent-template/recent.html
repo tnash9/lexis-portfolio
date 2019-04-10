@@ -1,0 +1,13 @@
+<template name="recent">
+  <div class="home-content center-align">
+    <h1>Here's What I'm Working On</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="flex-row-container">
+      {{#each recents}}
+        {{> projectCard}}
+      {{/each}}
+    </div>
+  </div>
+</template>
