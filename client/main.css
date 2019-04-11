@@ -11,15 +11,17 @@ body {
   font-family: Open Sans;
   color: var(--font-color);
   background-color: var(--color-light);
-  overflow: hidden !important;
 }
 
 /* NAV */
 .menu-button {
+  position: fixed;
   display: inline-block;
   top: 0;
-  padding: 1.25%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
   cursor: pointer;
+  z-index: 2;
 }
 
 .overlay {
@@ -125,9 +127,8 @@ span.closebtn:hover, span.closebtn:focus {
 
 /* PAGES */
 .page {
-  margin-left: 5%;
+  margin-left: 2.5%;
   animation: 1.25s cubic-bezier(0.215, 0.610, 0.355, 1) slideInFromRight;
-  overflow: hidden;
 }
 
 .vertical-center {
@@ -178,19 +179,49 @@ P {
 .project {
   width: 45%;
   margin: 2.5%;
-  border: var(--color-light) 2px solid;
-  border-radius: 4px;
+  background-color: var(--color-light-gray);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
 .project:hover {
-    box-shadow: 0 32px 48px 0 rgba(0,0,0,0.2);
+  background-color: var(--color-light);
+   box-shadow: 0 32px 48px 0 rgba(0,0,0,0.2);
+}
+
+.title {
+  position: relative;
+  padding: 1.25% 2.5%;
+  width: fit-content;
+  max-width: 75%;
+  background-color: var(--color-maroon);
+  top: -20px;
+  left: -10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.project:hover .title {
+  top: -22.5px;
+  left: -12.5px;
+  box-shadow: 0 32px 48px 0 rgba(0,0,0,0.2);
 }
   
 .project h2 {
-  color: var(--color-red);
+  color: var(--color-light);
   font-size: 200%;
+  transition: .5s;
+}
+
+.project h5 {
+  color: var(--color-light);
+  font-size: 125%;
+  transition: .5s;
+}
+
+.project:hover h5 {
+  color: var(--color-red);
+  font-size: 150%;
 }
 
 img {
@@ -381,18 +412,13 @@ img::-moz-selection {
 }
 /* HIGHLIGHT COLOR */
 
-.resume-container {
-  overflow-y: scroll;
-}
-
 .down-arrow {
-  margin-top:50%;
+  margin-top: 55%;
   text-align: center;
   font-size:500%;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
   z-index: -1;
-  position: absolute;
 }
 
 .resume {
@@ -421,3 +447,7 @@ img::-moz-selection {
   }
 }
 /* ARROW ANIMATION */
+
+.static {
+  position: fixed;
+}
