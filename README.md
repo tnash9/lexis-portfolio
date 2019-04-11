@@ -11,4 +11,4 @@
 
 ## Development
   ~~I think I'm going to develop this site in plain HTML/CSS, using Javascript and CSS to make it look cool and pretty.~~
-  I will be developing this site in tbe Meteor framework with Blaze templates and Bootstrap for the CSS
+  <br>I will be developing this site in tbe Meteor framework with Blaze templates and Bootstrap for the CSS
