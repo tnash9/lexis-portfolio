@@ -11,44 +11,13 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="center-align button-group" id="contactButtons">
-            <a class="button" href="tel:4024320335">Call Me</a>
-            <a class="button" href="sms:4024320335">Text Me</a>
-            <a class="button" href="mailto:tannernash9@gmail.com">Email Me</a>
-            <a class="button" id="reveal">Other Comments</a>
+            <a class="button" href="/hire">Hire Me</a>
+            <a class="button" href="tel:5152387896">Call Me</a>
+            <a class="button" href="sms:5152387896">Text Me</a>
+            <a class="button" href="mailto:lruroden@iastate.edu">Email Me</a>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="form-group hide" id="contactForm">
-            <form class="new-comment" method="POST">
-              <input type="text" name="name" placeholder="Name*" required>
-              <input type="email" name="email" placeholder="Email">
-              <textarea name="comment" placeholder="Comment*" required></textarea>
-              <p>Disclaimer: This comment will be posted below for all visitors of my site to see...just fyi</p>
-              <div class="button-group-inline">
-                <input type="submit" class="button" value="Submit">
-                <input type="button" class="button" id="cancel" value="Cancel">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="comments">
-        {{> comments}}  
       </div>
     </div>
   </div>
-
-  <script>
-    $('#reveal').click(function(){
-      $('#contactForm').toggleClass('hide');
-      $('.button-group').toggleClass('hide');
-    });
-
-    $('#cancel').click(function(){
-      $('#contactForm').toggleClass('hide');
-      $('.button-group').toggleClass('hide');
-    });
-  </script>
 </template>
