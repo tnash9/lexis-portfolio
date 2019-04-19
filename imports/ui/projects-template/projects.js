@@ -14,3 +14,10 @@ Template.projects.helpers({
     return Projects.find({}, { sort: { createdAt: -1 } });
   },
 });
+
+Template.projectCard.events({
+  'click .project': function() {
+    // go to project template for given project
+    Router.go('project.show', { name: this.name });
+  }
+});
