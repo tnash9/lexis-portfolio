@@ -47,3 +47,7 @@ Router.route('/contact', function () {
 Router.route('/hire', function () {
   this.render('hire');
 });
+
+Router.route('/dbadmin', function () {
+  this.render('database');
+});
