@@ -233,6 +233,10 @@ img {
   max-width: 95%;
   height: auto;
 }
+
+.image-container {
+  margin: .5%;
+}
 /* PROJECTS */
 
 /* BUTTONS */
@@ -444,4 +448,47 @@ img::-moz-selection {
 
 .static {
   position: fixed;
+}
+
+@media only screen and (max-width: 1000px) {
+  .down-arrow {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10%;
+    font-size: 500%;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .flex-row-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .project {
+    width: 70%;
+  }
+
+  a.button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project {
+    margin-bottom: 7.5%;
+    padding: 1%;
+  }
 }
