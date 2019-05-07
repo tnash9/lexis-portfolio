@@ -21,14 +21,14 @@ body {
   margin-top: 2.5%;
   margin-left: 2.5%;
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
 }
 
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 3;
+  z-index: 15;
   top: 0;
   left: 0;
   background-color: var(--color-light);
@@ -478,6 +478,10 @@ img::-moz-selection {
   a.button {
     width: 100%;
   }
+
+  .overlay a {
+    width: 95%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -490,5 +494,52 @@ img::-moz-selection {
   .project {
     margin-bottom: 7.5%;
     padding: 1%;
+  }
+
+  .down-arrow {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -1%;
+    font-size: 500%;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+    z-index: -1;
+  }
+
+  .menu-button {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5%;
+    margin-right: 2.5%;
+    cursor: pointer;
+  }
+
+  .overlay .closebtn {
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    font-size: 60px;
+    margin-right: 2.5%;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .menu-button {
+    background-color: var(--color-red);
+    border-radius: 50%;
+    padding: 5%;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .flex-row-container, .resume {
+    padding-bottom: 30%;
   }
 }
