@@ -211,7 +211,7 @@ P {
   left: -12.5px;
   box-shadow: 0 32px 48px 0 rgba(0,0,0,0.2);
 }
-  
+
 .project h2 {
   color: var(--color-light);
   font-size: 200%;
@@ -427,6 +427,10 @@ img::-moz-selection {
   background-color: var(--color-light);
 }
 
+.phone-message {
+  display: none;
+}
+
 /* ARROW ANIMATION */
 @keyframes bounce {
   from {
@@ -488,6 +492,11 @@ img::-moz-selection {
   .project {
     width: 85%;
   }
+
+  .phone-message {
+    display: block;
+    margin-bottom: 7.5%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -523,8 +532,8 @@ img::-moz-selection {
     bottom: 0;
     right: 0;
     font-size: 60px;
-    margin-right: 2.5%;
-    margin-top: 3%;
+    margin-right: 5%;
+    margin-bottom: 4%;
   }
 }
 
@@ -539,7 +548,7 @@ img::-moz-selection {
     width: 100%;
   }
 
-  .flex-row-container, .resume {
+  .flex-row-container, .resume, .project-description {
     padding-bottom: 30%;
   }
 }
