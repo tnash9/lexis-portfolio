@@ -6,18 +6,37 @@
 
     <!-- RESUME -->
     <div class="resume">
-      <!-- WORK EXPERIENCE -->
-      {{> section}}
-      {{> section}}
-      {{> section}}
-      <!-- END WORK EXPERIENCE -->
-      <!-- LEADERSHIP/ACHIEVEMENTS -->
+      {{> work}}
+      {{> achievements}}
+      {{> education}}
+
+      <!-- DOWNLOAD -->
+      <!-- <section>
+        <div class="center download">
+          <h3>
+            <a href="/download">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              Download My Resume
+            </a>
+          </h3>
+        </div>
+      </section> -->
     </div>
     <!-- END RESUME -->
   </div>
+
+  <script>
+    $(".glyphicon-menu-down").click(function () {
+      $('html,body').animate({
+          scrollTop: $(".resume").offset().top
+        },
+        'slow');
+    });
+  </script>
 </template>
 
-<template name="section">
+<!-- WORK EXPERIENCE -->
+<template name="work">
   <section>
     <div class="center">
       <h2 class="subheader">Work Experience</h2>
@@ -44,55 +63,51 @@
     </ul>
   </section>
 </template>
+<!-- END WORK EXPERIENCE -->
 
-<!-- <section>
+<!-- LEADERSHIP/ACHIEVEMENTS -->
+<template name="achievements">
+  <section>
     <div class="center">
-      <h2>Leadership & Achievements</h2>
+      <h2 class="subheader">Leadership & Achievements</h2>
     </div>
     <div class="center">
-      <h4 class="subheader"><b>Destination Iowa State Team Leader</b></h4>
-      <h6 class="subheader">New Student Program, Fall 2018</h6>
+      <h4><b>Destination Iowa State Team Leader</b></h4>
+      <h5>New Student Program, Fall 2018</h5>
     </div>
     <ul>
       <li>Guide a group of new students in orientation activities for three consecutive days</li>
       <li>Initiate discussion focused on new student success</li>
     </ul>
     <div class="center">
-      <h4 class="subheader"><b>Henderson Hall Recycling Chair</b></h4>
-      <h6 class="subheader">House Cabinet, Friley, 2017-2018</h6>
+      <h4><b>Henderson Hall Recycling Chair</b></h4>
+      <h5>House Cabinet, Friley, 2017-2018</h5>
     </div>
     <ul>
       <li>Promote recycling in my dorm's hall</li>
     </ul>
     <div class="center">
-      <h4 class="subheader"><b>George Washington Carver Scholar</b></h4>
-      <h6 class="subheader">Scholarship Program</h6>
+      <h4><b>George Washington Carver Scholar</b></h4>
+      <h5>Scholarship Program</h5>
     </div>
-  </section> -->
+  </section>
+</template>
 <!-- END LEADERSHIP/ACHIEVEMENTS -->
+
 <!-- EDUCATION -->
-<!-- <section>
+<template name="education">
+  <section>
     <div class="center">
-      <h2>Education</h2>
+      <h2 class="subheader">Education</h2>
     </div>
     <div class="center">
-      <h4 class="subheader"><b>Iowa State University</b></h4>
-      <h6 class="subheader">Interior Design, May 2021</h6>
+      <h4><b>Iowa State University</b></h4>
+      <h5>Interior Design, May 2021</h5>
     </div>
     <ul>
       <li>Cumulative GPA 3.85/4.0</li>
       <li>Dean's List both semesters of 2017-2018 academic year</li>
     </ul>
-  </section> -->
+  </section>
+</template>
 <!-- END EDUCATION -->
-<!-- DOWNLOAD -->
-<!-- <section>
-    <div class="center download">
-      <h3>
-        <a href="assets/lexi-ruroden-resume.pdf" download>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          Download My Resume
-        </a>
-      </h3>
-    </div>
-  </section> -->

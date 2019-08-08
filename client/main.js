@@ -1,5 +1,6 @@
 import '../imports/ui/site.js';
 import { Projects } from '../imports/api/projects.js';
+import { Meteor } from 'meteor/meteor';
 
 Router.route('/', function () {
   this.render('home');
@@ -42,10 +43,6 @@ Router.route('/project/:name', function () {
 
 Router.route('/contact', function () {
   this.render('contact');
-});
-
-Router.route('/hire', function () {
-  this.render('hire');
 });
 
 Router.route('/dbadmin', function () {
