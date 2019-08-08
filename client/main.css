@@ -419,12 +419,30 @@ img::-moz-selection {
   z-index: -1;
 }
 
+.glyphicon-menu-down {
+  cursor: pointer;
+}
+
 .resume {
   position: relative;
   top: 100vh;
   margin-bottom: 5%;
+  padding-top: 2.5%;
   z-index: 2;
   background-color: var(--color-light);
+}
+
+.download {
+  padding-top: 10%;
+}
+
+.download a {
+  color: var(--font-color);
+}
+
+.download a:hover, .download a:active {
+  text-decoration: none;
+  color: var(--color-red);
 }
 
 .phone-message {
@@ -452,6 +470,14 @@ img::-moz-selection {
 
 .static {
   position: fixed;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu-button {
+    background-color: var(--color-red);
+    border-radius: 50%;
+    padding: 1.5%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -539,8 +565,6 @@ img::-moz-selection {
 
 @media only screen and (max-width: 550px) {
   .menu-button {
-    background-color: var(--color-red);
-    border-radius: 50%;
     padding: 5%;
   }
 
@@ -556,5 +580,10 @@ img::-moz-selection {
 @media only screen and (max-width: 450px) {
   .subheader {
     margin: 7.5% 0;
+  }
+
+  a.button {
+    padding: 4% 1.25%;
+    margin: 1%;
   }
 }
