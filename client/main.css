@@ -234,6 +234,11 @@ img {
   height: auto;
 }
 
+.home-img {
+  max-width: 75%;
+  margin-left: -2.5%;
+}
+
 .image-container {
   margin: .5%;
 }
